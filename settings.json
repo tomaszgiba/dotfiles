@@ -1,0 +1,30 @@
+{
+    "editor.fontSize": 15,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "editor.fontFamily": " 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.letterSpacing": 0.1,
+    "editor.rulers": [80],
+    "editor.wordWrapColumn": 120,
+    "editor.minimap.maxColumn": 80,
+    "editor.renderControlCharacters": false,
+
+    "files.watcherExclude": {
+        "**/.nvm/**": true,
+        "**/.pnpm-store/**": true,
+        "**/build/**": true,
+        "**/dist/**": true
+    },
+    "files.exclude": {
+        "**/.lock": true,
+        "**/.nvm": true
+    },
+
+    "go.inferGopath": true,
+    "go.gotoSymbol.includeGoroot": true,
+    "go.goroot": "/usr/lib/go-1.12",
+    "go.formatTool": "goimports",
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": ["--fast"],
+    "go.autocompleteUnimportedPackages": true
+}
