@@ -1,0 +1,9 @@
+[/]
+clock-show-weekday=true
+enable-animations=false
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Yaru-dark'
+icon-theme='ubuntu-mono-light'
+show-battery-percentage=true
+text-scaling-factor=1.0
+toolkit-accessibility=false
