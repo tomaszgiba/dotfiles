@@ -7,24 +7,40 @@
     "editor.rulers": [80],
     "editor.wordWrapColumn": 120,
     "editor.minimap.maxColumn": 80,
-    "editor.renderControlCharacters": false,
+    "editor.renderControlCharacters": true,
 
     "files.watcherExclude": {
         "**/.nvm/**": true,
         "**/.pnpm-store/**": true,
         "**/build/**": true,
-        "**/dist/**": true
+        "**/dist/**": true,
+        "**/localdata/**": true,
+        "**/logs/**": true,
+        "**/.log": true
     },
     "files.exclude": {
         "**/.lock": true,
         "**/.nvm": true
     },
-
-    "go.inferGopath": true,
     "go.gotoSymbol.includeGoroot": true,
     "go.goroot": "/usr/lib/go-1.12",
     "go.formatTool": "goimports",
     "go.lintTool": "golangci-lint",
     "go.lintFlags": ["--fast"],
-    "go.autocompleteUnimportedPackages": true
+    "go.autocompleteUnimportedPackages": true,
+    "go.delveConfig": {
+        "apiVersion": 2
+    },
+    "go.testFlags": [
+        "-count=1",
+    ],
+    "go.testEnvVars": {},
+    "go.gocodeAutoBuild": true,
+    "go.gotoSymbol.includeImports": true,
+    "go.inferGopath": true,
+    "goOutliner.enableDebugChannel": true,
+    "workbench.colorTheme": "Monokai",
+    "workbench.editor.showTabs": true,
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": false
 }
