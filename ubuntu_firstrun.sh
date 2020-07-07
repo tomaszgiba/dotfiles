@@ -9,9 +9,8 @@ while sudo fuser /var/{lib/{dpkg,apt/lists},cache/apt/archives}/lock >/dev/null 
    sleep 5
 done
 
-sudo usermod -aG docker $USER 
-sudo systemctl enable docker 
+sudo usermod -aG docker $USER  && sudo systemctl enable docker 
 
-snap install code && snap install slack
+sudo snap install code && sudo snap install slack
 
 } # this ensures the entire script is downloaded #
