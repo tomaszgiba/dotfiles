@@ -2,7 +2,7 @@
 
 { # this ensures the entire script is downloaded #
 
-sudo apt install curl ssh tree zsh vim git htop mc xclip docker docker-compose virtualbox
+sudo apt -y install curl ssh tree zsh vim git htop mc xclip docker docker-compose virtualbox
 
 sudo usermod -aG docker $USER
 sudo systemctl enable docker
