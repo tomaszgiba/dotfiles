@@ -6,4 +6,8 @@ sudo systemctl enable docker
 
 snap install code
 snap install slack
+
+
+# Go - https://golang.org/doc/faq#git_https
+
 ```
