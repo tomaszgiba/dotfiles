@@ -11,6 +11,6 @@ done
 
 sudo usermod -aG docker $USER  && sudo systemctl enable docker 
 
-sudo snap install code && sudo snap install slack
+sudo snap install code --classic && sudo snap install slack
 
 } # this ensures the entire script is downloaded #
