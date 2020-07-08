@@ -11,7 +11,10 @@ while sudo fuser /var/{lib/{dpkg,apt/lists},cache/apt/archives}/lock >/dev/null 
 done
 
 # Install Vundle for vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+FILE=~/.vim/bundle/Vundle.vim
+if [ ! -f "$FILE" ]; then
+   git clone https://github.com/VundleVim/Vundle.vim.git $FILE
+fi
 
 # Enable Docker
 sudo usermod -aG docker $USER  && sudo systemctl enable docker 
