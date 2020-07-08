@@ -17,7 +17,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 sudo usermod -aG docker $USER  && sudo systemctl enable docker 
 
 # Install Slack + VSCode
-sudo snap install code --classic && sudo snap install slack
+sudo snap install code --classic && sudo snap install slack --classic
 
 } # this ensures the entire script is downloaded #
 
