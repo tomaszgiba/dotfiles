@@ -16,6 +16,13 @@ if [ ! -f "$FILE" ]; then
    git clone https://github.com/VundleVim/Vundle.vim.git $FILE
 fi
 
+# Set up global gitignore
+FILE=~/.gitignore_global
+if [ ! -f "$FILE" ]; then
+   touch $FILE
+   git config --global core.excludesfile $FILE
+fi
+
 # Enable Docker
 sudo usermod -aG docker $USER  && sudo systemctl enable docker 
 
