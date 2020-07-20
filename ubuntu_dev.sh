@@ -26,6 +26,9 @@ fi
 # Enable Docker
 sudo usermod -aG docker $USER  && sudo systemctl enable docker 
 
+# Install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
 # Install Slack + VSCode
 sudo snap install code --classic && sudo snap install slack --classic
 
