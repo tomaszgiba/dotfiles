@@ -10,11 +10,9 @@ while sudo fuser /var/{lib/{dpkg,apt/lists},cache/apt/archives}/lock >/dev/null 
    sleep 5
 done
 
-# Install Vundle for vim
-FILE=~/.vim/bundle/Vundle.vim
-if [ ! -f "$FILE" ]; then
-   git clone https://github.com/VundleVim/Vundle.vim.git $FILE
-fi
+# Install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Set up global gitignore
 FILE=~/.gitignore_global
