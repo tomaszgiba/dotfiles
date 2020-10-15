@@ -3,17 +3,6 @@
 { # this ensures the entire script is downloaded #
 
 # install cli basics
-sudo apt install -y ssh jq tree zsh vim git htop mc libpq-dev xmlsec1 libxml2 libxmlsec1 libxslt1-dev libxmlsec1-dev
-
-# ..wait for apt to finish 
-while sudo fuser /var/{lib/{dpkg,apt/lists},cache/apt/archives}/lock >/dev/null 2>&1; do
-   echo Waiting for other instances of apt to complete...
-   sleep 5
-done
-
-# check if Gnome is present
-if ! [ "$(command -v gnome-shell)" ]; then
-  sudo apt install -y xclip gnome-tweaks
-fi
+sudo apt install -y ssh jq tree zsh vim git htop mc libpq-dev xmlsec1 libxml2 libxmlsec1 libxslt1-dev libxmlsec1-dev xclip gnome-tweaks
 
 } # this ensures the entire script is downloaded #
